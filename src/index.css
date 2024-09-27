@@ -1,0 +1,22 @@
+.pictures-container {
+    max-width: 1200px;
+    margin: 2rem auto; /* Центрування за допомогою авто відступів зліва і справа */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    justify-content: center; /* Додаємо центрування по горизонталі */
+  }
+  
+  .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .picture {
+    width: 100%;
+    height: 20rem;
+    cursor: pointer;
+  }
+  
