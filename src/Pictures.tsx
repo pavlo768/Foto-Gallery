@@ -20,7 +20,7 @@ const Pictures: FC<PicturesProps> = (props) => {
     <div className="pictures-container">
       {data.map((slides, index) => (
         <div
-          onClick={() => handleClickPicture(index)} // Виправлено, щоб викликати функцію
+          onClick={() => handleClickPicture(index)}
           key={index}
           className="picture"
         >

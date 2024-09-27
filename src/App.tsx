@@ -14,7 +14,7 @@ function App() {
     <>
       <Pictures
         data={slides}
-        onClick={(currentIndex) => setIndex(currentIndex)}  // Викликаємо з індексом
+        onClick={(currentIndex) => setIndex(currentIndex)}  
       />
 
       <Lightbox
@@ -23,10 +23,10 @@ function App() {
           showToggle: true,
           descriptionTextAlign: 'end',
         }}
-        index={index} // Додаємо індекс для початкового зображення
-        open={index >= 0}  // Перевіряємо, чи відкрити галерею
-        close={() => setIndex(-1)}  // Закриваємо галерею
-        slides={slides}  // Передаємо слайди
+        index={index}
+        open={index >= 0}  
+        close={() => setIndex(-1)}  
+        slides={slides} 
       />
     </>
   );
